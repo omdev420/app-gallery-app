@@ -6,9 +6,15 @@ import "./App.css";
 // Constants
 const INSTAGRAM_HANDLE = "shubhankardev";
 const INSTAGRAM_LINK = `https://instagram.com/${INSTAGRAM_HANDLE}`;
+const TEST_PICS = [
+  "https://i.imgur.com/tjefiAf.jpeg",
+  "https://i.imgur.com/jjDb7iU.jpeg",
+];
 
 const App = () => {
   const [walletAddress, setWalletAddress] = useState(null);
+  const [inputValue, setInputValue] = useState("");
+  const [picList, setPicList] = useState([]);
 
   const checkIfWalletIsConnected = async () => {
     try {
@@ -42,6 +48,21 @@ const App = () => {
     }
   };
 
+  const sendPic = async () => {
+    if (inputValue.length > 0) {
+      console.log("Pic Link:", inputValue);
+      setPicList([...picList, inputValue]);
+      setInputValue("");
+    } else {
+      console.log("Empty input. Try Again.");
+    }
+  };
+
+  const onInputChange = (event) => {
+    const { value } = event.target;
+    setInputValue(value);
+  };
+
   const renderNotConnectedContainer = () => (
     <button
       className="cta-button connect-wallet-button"
@@ -51,6 +72,34 @@ const App = () => {
     </button>
   );
 
+  const renderConnectedContainer = () => (
+    <div className="connected-container">
+      <form
+        onSubmit={(event) => {
+          event.preventDefault();
+          sendPic();
+        }}
+      >
+        <input
+          type="text"
+          placeholder="Enter art work link!"
+          value={inputValue}
+          onChange={onInputChange}
+        />
+        <button type="submit" className="cta-button submit-gif-button">
+          Submit
+        </button>
+      </form>
+      <div className="gif-grid">
+        {picList.map((pic) => (
+          <div className="gif-item" key={pic}>
+            <img src={pic} alt={pic} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+
   useEffect(() => {
     const onLoad = async () => {
       await checkIfWalletIsConnected();
@@ -58,6 +107,14 @@ const App = () => {
     window.addEventListener("load", onLoad);
     return () => window.removeEventListener("load", onLoad);
   }, []);
+
+  useEffect(() => {
+    if (walletAddress) {
+      console.log("Fetching artworks...");
+
+      setPicList(TEST_PICS);
+    }
+  }, [walletAddress]);
 
   return (
     <div className="App">
@@ -73,6 +130,7 @@ const App = () => {
             Showcase your art collection in the metaverse ✨
           </p>
           {!walletAddress && renderNotConnectedContainer()}
+          {walletAddress && renderConnectedContainer()}
         </div>
         <div className="footer-container">
           <img

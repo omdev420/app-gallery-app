@@ -1,0 +1,33 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_1_2" fill="white">
+<rect x="52" y="83" width="103" height="130" rx="6"/>
+</mask>
+<rect x="52" y="83" width="103" height="130" rx="6" stroke="black" stroke-width="20" mask="url(#path-1-inside-1_1_2)"/>
+<mask id="path-2-inside-2_1_2" fill="white">
+<rect x="79" y="110" width="49" height="72" rx="6"/>
+</mask>
+<rect x="79" y="110" width="49" height="72" rx="6" stroke="black" stroke-width="20" mask="url(#path-2-inside-2_1_2)"/>
+<mask id="path-3-inside-3_1_2" fill="white">
+<rect x="180" y="53" width="152" height="190" rx="6"/>
+</mask>
+<rect x="180" y="53" width="152" height="190" rx="6" stroke="black" stroke-width="20" mask="url(#path-3-inside-3_1_2)"/>
+<mask id="path-4-inside-4_1_2" fill="white">
+<rect x="209" y="83" width="95" height="130" rx="6"/>
+</mask>
+<rect x="209" y="83" width="95" height="130" rx="6" stroke="black" stroke-width="20" mask="url(#path-4-inside-4_1_2)"/>
+<path d="M258.118 121.068C248.676 122.563 228.281 122.937 231.302 136.762C234.324 150.588 241.877 165.535 258.118 173.755C274.358 181.976 258.118 146.851 274.358 144.983C290.598 143.115 267.56 119.574 258.118 121.068Z" stroke="black" stroke-width="10" stroke-linecap="round"/>
+<mask id="path-6-inside-5_1_2" fill="white">
+<rect x="357" y="83" width="103" height="130" rx="6"/>
+</mask>
+<rect x="357" y="83" width="103" height="130" rx="6" stroke="black" stroke-width="20" mask="url(#path-6-inside-5_1_2)"/>
+<mask id="path-7-inside-6_1_2" fill="white">
+<rect x="384" y="110" width="49" height="72" rx="6"/>
+</mask>
+<rect x="384" y="110" width="49" height="72" rx="6" stroke="black" stroke-width="20" mask="url(#path-7-inside-6_1_2)"/>
+<circle cx="119" cy="284" r="23" stroke="black" stroke-width="10"/>
+<circle cx="388" cy="284" r="23" stroke="black" stroke-width="10"/>
+<line x1="57" y1="455" x2="455" y2="455" stroke="black" stroke-width="10" stroke-linecap="round"/>
+<line x1="120" y1="305" x2="120" y2="453" stroke="black" stroke-width="10"/>
+<line x1="389" y1="305" x2="389" y2="453" stroke="black" stroke-width="10"/>
+<path d="M55.5 355C71.5 345 117 309 117 309C212 393 295.5 387 391.5 309C391.5 309 440 349 455.5 355" stroke="black" stroke-width="10" stroke-linecap="round"/>
+</svg>

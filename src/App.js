@@ -7,8 +7,16 @@ import "./App.css";
 const INSTAGRAM_HANDLE = "shubhankardev";
 const INSTAGRAM_LINK = `https://instagram.com/${INSTAGRAM_HANDLE}`;
 const TEST_PICS = [
-  "https://i.imgur.com/tjefiAf.jpeg",
-  "https://i.imgur.com/jjDb7iU.jpeg",
+"https://i.imgur.com/xvY3SYOl.jpg",
+"https://i.imgur.com/X6iykcZl.jpg",
+"https://i.imgur.com/nkNZn4fl.jpg",
+"https://i.imgur.com/DR3WLerl.jpg",
+"https://i.imgur.com/8caqgWGl.jpg",
+"https://i.imgur.com/UMq5Jipl.jpg",
+"https://i.imgur.com/6Ugjyzgl.jpg",
+"https://i.imgur.com/yRKbj5Xl.jpg",
+"https://i.imgur.com/kWYPjBMl.jpg",
+"https://i.imgur.com/3HLdTS5l.jpg",
 ];
 
 const App = () => {
